@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Infraction Track</string>
+
+    <string-array name="typeOfInfractions">
+
+        <item>Intel Top Secret Documents left unattended</item>
+        <item>Intel Restricted Secret Documents left unattended</item>
+        <item>Laptop left unattended</item>
+        <item>Tablet left unattended</item>
+        <item>HVPIP/Silicon unmounted left unattended</item>
+
+    </string-array>
+
+</resources>
