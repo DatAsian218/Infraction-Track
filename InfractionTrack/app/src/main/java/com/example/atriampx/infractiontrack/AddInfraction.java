@@ -12,12 +12,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.view.View.OnClickListener;
 
+import java.util.ArrayList;
+
 
 public class AddInfraction extends Activity {
+
+    ArrayList<Integer> listWWID = new ArrayList<Integer>();
+    ArrayList<Integer> listIndvInfrac = new ArrayList<Integer>();
+
+    ArrayList<Integer> listBU = new ArrayList<Integer>();
+    ArrayList<Integer> listBUInfrac = new ArrayList<Integer>();
+
 
     private Button submit;
 
     public void onCreate(Bundle savedInstanceState) {
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_infraction);
@@ -36,6 +46,45 @@ public class AddInfraction extends Activity {
         });
     }
 
+    /*public void individualInfractions(ArrayList<Integer> arrayWWID, ArrayList<Integer> arrayIndvInfrac, View text) {
+
+        EditText WWIDtext = (EditText) findViewById(R.id.infractor_name);
+
+        int WWIDnum = Integer.parseInt(text.getText().toString());
+
+        if (arrayWWID.contains(WWIDnum)) {
+
+            int index = arrayWWID.indexOf(WWIDnum);
+            int infraCount = arrayIndvInfrac.get(index);
+            arrayIndvInfrac.add(index, infraCount);
+        }
+
+        else {
+            arrayWWID.add(WWIDnum);
+            arrayIndvInfrac.add(1);
+        }
+
+    }
+
+    public void BUinfractions (ArrayList<Integer> arrayBU, ArrayList<Integer> arrayBUInfrac, View text) {
+
+        EditText WWIDtext = (EditText) findViewById(R.id.BUgroup);
+
+        int WWIDnum = Integer.parseInt(text.getText().toString());
+
+        if (arrayBU.contains(WWIDnum)) {
+
+            int index = arrayBU.indexOf(WWIDnum);
+            int infraCount = arrayBUInfrac.get(index);
+            arrayBUInfrac.add(index, infraCount);
+        }
+
+        else {
+            arrayBU.add(WWIDnum);
+            arrayBUInfrac.add(1);
+        }
+
+    }*/
 
 
 }
